@@ -77,7 +77,8 @@ savedata() {
           gender:response.data.gender,          
           submitted: true,                    
         }); 
-      console.log(response.data)     
+      console.log(response.data) 
+      alert("Data Submitted Successfully")    
       })    
       .catch(e=> {
       console.log(e);       
