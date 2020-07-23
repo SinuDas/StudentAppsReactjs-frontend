@@ -120,8 +120,8 @@ return (
      <div></div>     
         <div className="submit-form">     
            <div>
-           {this.state.hasdd && <span><h5 className="errors">Data Saved Successfully</h5></span>}
-           {this.state.hassubmit && <span><h5 className="errors">Data Submitted Successfully</h5></span>}
+           {this.state.hasdd && <span><h5 className="errors">Data Submitted Successfully</h5></span>}
+           
             <div className="form-group">
             {this.state.hasError && <span><p className="error">Invalid Data Entered</p></span>}
               <label htmlFor="name">Name</label>
