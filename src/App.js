@@ -5,7 +5,7 @@ import 'jquery/dist/jquery.min.js';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import "./App.css";
 import "./index";
-import AddTutorial from "./components/add-tutorial.component";
+import SaveData from "./components/Savedata";
 import ListData from "./components/showdata";
 class App extends Component {
   render() {
@@ -27,7 +27,7 @@ class App extends Component {
           </nav>
            <div>
              <Switch>              
-               <Route exact path="/add" component={AddTutorial} /> 
+               <Route exact path="/add" component={SaveData} /> 
                 <Route exact path="/list" component={ListData} />               
             </Switch> 
           </div> 

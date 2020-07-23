@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import TutorialDataService from "../services/tutorial.service";
+import  StudentDataService from "../services/student.service";
 import "bootstrap/dist/css/bootstrap.min.css";
-import AddTutorial from"../components/showdata";
 export default class ListData extends Component{
      constructor(pros){
          super(pros)
@@ -10,8 +9,9 @@ export default class ListData extends Component{
         studentdata:[],
     }
 }
-    Componentfetchdata(){
-      TutorialDataService.getAll()
+//function for listdata   
+Componentfetchdata(){
+  StudentDataService.getAll()
       .then(response => {
       this.setState({
       studentdata: response.data,
